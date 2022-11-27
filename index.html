@@ -1,84 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PorfolioMiguel</title>
-    <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- CSS only -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
- <!-- Font Awesome icons (free version)-->
- <script src="https://kit.fontawesome.com/e94ec99637.js" crossorigin="anonymous"></script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap" rel="stylesheet">
-   <!-- <link rel="stylesheet" href="assets/css/styles.css">-->
-</head>
-<body>
-    <!--Sección redes-->
-    <section>
-        <h2>redes sociales</h2>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PrimerRepo</title>
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <!-- Font Awesome icons (free version)-->
+      <script src="https://kit.fontawesome.com/e94ec99637.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+   </head>
+   <body>
+    <header>
+      <!--Barra de nav-->
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/images.png" alt="" width="30%" height="40%">
+        </a>
+       <!--Redes Sociales--> 
         <ul class="list-group list-group-horizontal">
-            <li class="list-group-item"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
-            <li class="list-group-item"><a href="https://www.linkedin.com/in/miguel-trubiano-83093229/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
-            <li class="list-group-item"><a href="https://www.github.com/trubiano59" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
-            <li class="list-group-item"><a href="https://login.live.com/" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i></a></li>
-            <!--<li class="list-group-item">
-             Button trigger modal -->
-            <!-- Boton que abre el login 
-              <i data-bs-toggle="modal" data-bs-target="#loginModal" class="fa-solid fa-user-lock fa-xl">
-              </i>
-            </li>-->
-        </ul>
+        <li class="list-group-item"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+        <li class="list-group-item"><a href="https://www.linkedin.com/in/miguel-trubiano-83093229/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+        <li class="list-group-item"><a href="https://www.github.com/trubiano59" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+        <li class="list-group-item"><a href="https://login.live.com/" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i></a></li>
+        <li class="list-group-item">
+        <!-- Button trigger modal -->
         
-    </section>
-    <!--Sección sobre mi-->
-    
-    <section>
-        <h2>Sobre mi</h2>  <!--Barra de nav-->
-        <div>
-            <img src="" alt="..." title="...">
-            <h1>Miguel Angel Trubiano</h1>
-            <h4>Desarrollador Web Full Stack Jr</h4>
-            <a href="https://google.com" target="_blank">ir a google</a>
+        <!-- Boton que abre el login -->
+          <i data-bs-toggle="modal" data-bs-target="#loginModal" class="fa-solid fa-user-lock fa-xl">
+          </i>
+        </li>
+        </ul>
         </div>
-        <div>
-            <p>
-                Deseo ganar experiencia en desarrollo/programación aplicando y expandiendo las aptitudes adquiridas, teniendo interes en trabajar en equipo para compartir y profundizar habilidades que complementen mis conocimientos de programación y como Front End Developer Junior realizando diferentes programas, para lo cual trato diariamente en mi tiempo libre de recopilar información de cursos, explorando los últimos avances tecnológicos en el mundo del desarrollo web front-end y back-end
-            </p>
+        </nav>
+        
+        <!-- FIN DE NAVEGACION-->
+    <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </section>
-    <!--Sección Experiencia Laboral-->
-    <section>
-        <h2>Experiencia laboral</h2>
-    </section>
-    <!--Sección Habilidades-->
-    <section>
+        <div class="modal-body">
+          <form>
+          <div class="mb-3 row">
+            <label for="exampleInputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control-plaintext" id="exampleInputEmail" value="email@dominio.com">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword">
+              <div id="emailHelp" class="form-text">Nunca compartiremos tu información con nadie.</div>
+            </div>
+          </div>
+        </div>
+         </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Iniciar Sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+      <!--Banner con foto--> 
+      <section id="todo-sobre-mi" class="about">
+         <div class="container-fluid text-center"></div>
+         <img src="./assets/img/ALPES SUIZOS.png" alt="" width="100%" height="50%">
+         <div class="row d-flex justify-content-center apertura">
+          <div class="col-6"></div>
+            <div class="col-6 navegacion">
+              
+              <!--<ul class="navbar-nav text-center">
+                <li class="nav-item"><a href="#experience">EXPERIENCIA</a></li>
+                <li class="nav-item"><a href="#education">EDUCACIÓN</a></li>
+                <li class="nav-item"><a href="#skills">SKILLS</a></li>
+                <li class="nav-item"><a href="#cursos">CURSOS REALIZADOS</a></li>
+                <li class="nav-item"><a href="#interests">INTERESES</a></li>
+                <li class="nav-item"><a href="#awards">LOGROS</a></li>
+                <li class="nav-item"><a href="#work">TRABAJOS</a></li>
+                <li class="nav-item"><a href="#proyects">PROYECTOS</a></li>
+              </ul>--> 
+            </div>
+          </div>
+      </section>
+     <!--Seccion acerca de mi-->
+      <section id="Sobre Mi" class="Sobre Mi text-blue">
+         <div class="conteSobreMi container-fluid rounded shadow-sm p-3 mb-5">
+            <div class="container-fluid text-center">
+               <div class="row">
+                  <div class="col-12 bg-black"></div>
+                  <h1 class="mb-0">
+                     <img src="./assets/img/profile.jpg" class="perfil rounded-circle w-25" alt="..." title="...">
+                     <br>
+                     <span class="text-terciary nombre"> Miguel Angel Trubiano</span>
+                     <br>
+                     <span class="tituloPerfil">Desarrollador Web Full Stack Jr</span>
+                    <h3 class="mt-5 acerca"> <span class="text-secundary"> Acerca de Mi</span></h3>
+                    <h4>Deseo ganar experiencia en desarrollo/programación aplicando y expandiendo las aptitudes adquiridas, teniendo interes en trabajar en equipo para compartir y profundizar habilidades que complementen mis conocimientos de programación y como Front End Developer Junior realizando diferentes programas, para lo cual trato diariamente en mi tiempo libre de recopilar información de cursos, explorando los últimos avances tecnológicos en el mundo del desarrollo web front-end y back-end</h4>
+                  </h1> 
+               </div>
+              </div>
+            </div>
+            <!--Ir a google-->
+            <div>
+              <a href="https://google.com" target="_blank">IR A GOOGLE</a><br><br>
+            </div> 
+      </section>
+      <!-- FINAL DE SOBRE MI-->
+      <!-- Seccion Experiencia Laboral-->
+      <section>
+        <h2>Experiencia Laboral</h2>
+
+      </section>
+      <!-- Seccion Educacion-->
+      <section>
+        <h2>Educacion</h2>
+
+      </section>
+      <!-- Seccion Habilidades-->
+      <section>
         <h2>Habilidades</h2>
-    </section>
-    <!--Sección Estudios-->
-    <section>
-        <h2>Estudios</h2>
-    </section>
-    <!--Sección Trabajos-->
-    <section>
-        <h2>Trabajos</h2>
-    </section>
-    <!--Sección Proyectos-->
-    <section>
+
+      </section>
+      <!-- Seccion Proyectos-->
+      <section>
         <h2>Proyectos</h2>
-    </section>
-    <!--Sección Footer-->
-    <section>
-        <h2>Footer</h2>
-    </section>
+
+      </section>
+      <!-- Seccion Cursos Realizados-->
+      <section>
+        <h2>Cursos Realizados</h2>
+
+      </section>
 
 
 
-    <!-- JavaScript Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
-</html>
+
+
+      <footer id="main-footer">
+        <div class="container">
+          <p class="small">Miguel Angel Trubiano Portfolio 2022 &copy;</p>
+          <i class="fa-brands fa-whatsapp"> Mi washapp: 54-9-2616714457</i>
+        </div>
+      </footer>
+      
+        
+      
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+     
+      </body>
+  </html>
