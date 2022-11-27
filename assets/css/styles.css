@@ -1,3 +1,6 @@
+/*Etiqueta HTML va directamente el nombre*/
+/*CLASES VA CON "." (PUNTO) ADELANTE*/
+/*ID VA CON EL "#" ADELANTE*/
 .banner{
     background-image: linear-gradient(
         rgba(0,0,0,0.4),
@@ -15,16 +18,17 @@
 
 
 .navegacion{
-    margin-top: -25rem;
+    margin-top: -15rem;
 }
 
 .perfil{
     margin-top: -15rem;
-    
+    border-style: solid;
 }
 
 .perfil.w-25{
     width: 15rem !important;
+    border-style: solid;
 }
 
 .acerca{
@@ -37,14 +41,20 @@ h1.mb-0{
 
 .tituloPerfil{
     margin-top: -5rem;
+   
 }
 .oficina{
     min-width: 10rem;
 }
 
+.nombre{
+    font-size: 3rem;
+}
+
 /*Barra de navegacion*/
 .navbar.navbar-expand-lg.bg-primary{
     background-color: #138bc2 !important; } 
+
 
 .fa-brands.fa-envelope-o.fa-xl:hover{
     --bs-text-opacity: 1;
@@ -91,7 +101,7 @@ section.panel{
 
 /*sectión 1*/
 .conteSobreMi{
-    background-color: rgba(16, 25, 146, 0.898); 
+    background-color: rgba(16, 116, 146, 0.898); 
 }
 
 
