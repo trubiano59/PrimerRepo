@@ -81,6 +81,11 @@ h1.mb-0{
     color: #FFFFFF
 }
 
+.fa-solid.fa-user-unlock.fa-xl:hover{
+    --bs-text-opacity: 1;
+    color: #FFFFFF
+}
+
 .list-group{
     
     color:white !important
@@ -270,6 +275,8 @@ main {
     left:calc(50% - 110px);
     bottom:50px;
 }
+
+
 
 
 
