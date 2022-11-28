@@ -83,7 +83,7 @@ h1.mb-0{
 
 .fa-solid.fa-user-unlock.fa-xl:hover{
     --bs-text-opacity: 1;
-    color: #FFFFFF
+    color: #FFFFFF 
 }
 
 .list-group{
@@ -275,6 +275,25 @@ main {
     left:calc(50% - 110px);
     bottom:50px;
 }
+    button.btn.btn-secondary{
+    background-color: red;
+}
+
+    button.btn.btnLogin{
+        background-color: rgb(102, 102, 231);
+    }
+    button.btn.btnAgree{
+        background-color: green;
+    }
+    button.btn.btnMod{
+        background-color: skyblue;
+    }
+    button.btn.btnDelete{
+        background-color: crimson;
+    }
+    button.btn.btnCancel{
+        background-color: orange;
+    }
 
 
 
