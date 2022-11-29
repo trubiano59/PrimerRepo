@@ -46,6 +46,7 @@
           
           <!-- FIN DE NAVEGACION-->
     </header>
+
       <!--Banner con foto--> 
       <section id="todo-sobre-mi" class="about">
          <div class="container-fluid text-center"></div>
@@ -53,9 +54,16 @@
          <div class="row d-flex justify-content-center apertura">
           <div class="col-6"></div>
             <div class="col-6 navegacion">
+              <ul class="navbar-nav text-center">
+                <li class="nav-item"><a href="#experiencia">EXPERIENCIA</a></li>
+                <li class="nav-item"><a href="#educacion">EDUCACIÓN</a></li>
+                <li class="nav-item"><a href="#habilidades">HABILIDADES</a></li>
+                <li class="nav-item"><a href="#proyectos">PROYECTOS</a></li>
+               </ul>
               </div>
               </div>
       </section>
+      
      <!--Seccion acerca de mi-->
       <section id="Sobre Mi" class="Sobre Mi text-blue">
          <div class="conteSobreMi container-fluid rounded shadow-sm p-3 mb-5">
@@ -74,6 +82,12 @@
                </div>
               </div>
               </div>
+
+       <!-- Button trigger modal-->   
+       <button type="button" id="btn" data-bs-toggle="modal" data-bs-target="#sobreMiModal" class="btn btn-close-white"><i class="fa-solid fa-pencil"></i></button> 
+     </section>
+     <section id="editGoogle" class="Ir a Google text-opacity-50" >
+
             <!--Ir a google-->
             <div>
               <a href="https://google.com" target="_blank">IR A GOOGLE</a><br><br>
@@ -98,8 +112,8 @@
           </div>
         </div>
       </section>
-      <!-- Seccion Experience-->
-      <section class="resume-section" id="experience">
+      <!-- Seccion Experiencia-->
+      <section class="resume-section" id="experiencia">
         <!-- Button trigger modal -->
         <div class="conteExperiencia container-fluid rounded shadow-sm p-3 mb-5">
           <div class="resume-section-content">
@@ -205,103 +219,132 @@
           </div>
      </section>
       <!-- FIN DE EDUCACION-->
-<!-- Seccion Habilidades-->
-<section id="habilidades" class="habilidades text-white">
-  <div class="conteEstudios container-fluid rounded shadow-sm p-3 mb-5">
-    <div class="resume-section-content">
-      <h2 class="mb-5">Habilidades</h2>
-    </div>
-    <div class="d-flex col-auto mt-2">
-      <!-- Button trigger modal --> 
-    <button type="button"  data-bs-toggle="modal" data-bs-target="#habilidadesModal" class="btn btn-close-white"><i class="fa-solid fa-pencil"></i></button>
-    </div>
- </div>
- <div class="row">
-  <div class="col-3">
-    <h4>HTML</h4>
-   </div>
-   <div class="col-8 mt-2">
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; min-width:10%">75%</div>
-  </div>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-3">
-      <h4>CSS</h4>
-      </div>
-      <div class="col-8 mt-2">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%; min-width:10%">60%</div>
-          </div>
-          </div>
-          </div>
-    <div class="row">
-      <div class="col-3">
-        <h4>Java</h4>
-      </div>
-      <div class="col-8 mt-2">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%; min-width:10%">50%</div>
-          </div>
-          </div>
-    </div>
-    <div class="row">
-      <div class="col-3">
-        <h4>JavaScript</h4>
-      </div>
-      <div class="col-8 mt-2">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%; min-width:10%">35%</div>
+     <!-- Seccion Habilidades-->
+     <section id="habilidades" class="habilidades text-white">
+      <div class="conteEstudios container-fluid rounded shadow-sm p-3 mb-5">
+        <div class="resume-section-content">
+          <h2 class="mb-5">Habilidades</h2>
+        </div>
+        <div class="d-flex col-auto mt-2">
+          <!-- Button trigger modal -->
+          <button type="button"  data-bs-toggle="modal" data-bs-target="#habilidadesModal" class="btn btn-close-white"><i class="fa-solid fa-pencil"></i></button>
+          <button type="submit" class="btn btn-close-white"><i class="fa-solid fa-trash-can"></i></button>
+          <button type="submit" class="btn btn-close-white"><i class="fa-solid fa-plus"></i></button>
         </div>
       </div>
-    </div>
-    <div class="row">
-     <div class="col-3">
-        <h4>Boopstrap</h4>
-     </div>
-     <div class="col-8 mt-2">
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width:10%">90%</div>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-      <div class="col-3">
-        <h4>Python</h4>
-      </div>
-      <div class="col-8 mt-2">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width:10%">90%</div>
+      <div class="row">
+        <div class="col-3">
+          <h4>HTML</h4>
+        </div>
+        <div class="col-8 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; min-width:10%">75%</div>
+          </div>
         </div>
       </div>
-     </div>
-     <div class="row">
-      <div class="col-3">
-        <h4>Manejo de Extintores</h4>
-      </div>
-      <div class="col-8 mt-2">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-terciary" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width:10%">90%</div>
+      <div class="row">
+        <div class="col-3">
+          <h4>CSS</h4>
+        </div>
+        <div class="col-8 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%; min-width:10%">60%</div>
+          </div>
         </div>
       </div>
-     </div>
-     <div class="row">
-      <div class="col-3">
-        <h4>Carga de Datos (Data Entry)</h4>
-      </div>
-      <div class="col-8 mt-2">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width:10%">90%</div>
+      <div class="row">
+        <div class="col-3">
+          <h4>Java</h4>
+        </div>
+        <div class="col-8 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%; min-width:10%">50%</div>
+          </div>
         </div>
       </div>
-     </div>
-  </section>
-  <!-- Seccion Proyectos-->
-      <section>
-        <h2>Proyectos</h2>
-
+      <div class="row">
+        <div class="col-3">
+          <h4>JavaScript</h4>
+        </div>
+        <div class="col-8 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%; min-width:10%">35%</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <h4>Boopstrap</h4>
+        </div>
+        <div class="col-8 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width:10%">90%</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <h4>Python</h4>
+        </div>
+        <div class="col-8 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width:10%">90%</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <h4>Manejo de Extintores</h4>
+        </div>
+        <div class="col-8 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-terciary" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width:10%">90%</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <h4>Carga de Datos (Data Entry)</h4>
+        </div>
+        <div class="col-8 mt-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; min-width:10%">90%</div>
+          </div>
+        </div>
+      </div>
       </section>
+      <!-- Seccion Proyectos-->
+      <section class="resume-section" id="proyects">
+        <div class="conteProyectos container-fluid rounded shadow-sm p-3 mb-5">
+          <div class="resume-section-content">
+            <h2 class="mb-5">Proyectos</h2>
+            <!-- Button trigger modal -->
+            <button type="button"  data-bs-toggle="modal" data-bs-target="#proyectosModal" class="btn btn-close-white"><i class="fa-solid fa-pencil"></i></button>
+            <button type="submit" class="btn btn-close-white"><i class="fa-solid fa-trash-can"></i></button>
+            <button type="submit" class="btn btn-close-white"><i class="fa-solid fa-plus"></i></button>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="flex-grow-1">
+               <li><span class="fa-li"><i class="fas fa-check"></i></span>
+                ARMADO DE PROGRAMAS DE CAPACITACIONES de Higiene y Seguridad en el trabajo en: Programa Empleo Joven y colegios de niveles secundarios y terciarios
+                <img src="assets/img/Seguridad-higiene-trabajo.jpg" width="350">
+               </li>
+               <li><span class="fa-li"><i class="fas fa-check"></i></span>
+                PROGRAMAS DE CONTROL DE SEGURIDAD EN EMPRESAS
+                <img src="assets/img/sistema de gestion de seguridad.jpg" width="350">
+               </li>
+               <li><span class="fa-li"><i class="fas fa-check"></i></span>
+                PROGRAMAS DE CONTROL DE ACCIDENTES Y ENFERMEDADES PROFESIONALES
+                <img src="assets/img/accidentes y enfermedades.jpg" width="350">
+               </li>
+              </div>
+            </div>
+          </div>
+        <!--<a class="btn btn-primary" href="/index.html" role="button">Volver</a>-->
+        </div>
+      </section>
+     <!-- FIN DE PROYECTOS-->     
+
+<!---->
       <!-- Seccion Cursos Realizados-->
       <section>
         <h2>Cursos Realizados</h2>
@@ -347,6 +390,58 @@
           </div>
         </div>
       </div>
+      <!-- Modal Banner -->
+      <!-- Button trigger modal -->
+      <button type="button" id="btn" data-bs-toggle="modal" data-bs-target="#bannerModal" class="btn btn-close-white editBanner"><i class="fa-solid fa-pencil"></i></button>
+      <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Editar Banner</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form name="bannerForm">
+                <!-- formulario de banner-->
+                <div class="mb-3">
+                  <label for="bannerImg" class="form-label">Modificar imagen de banner</label>
+                  <input class="form-control" type="file" id="bannerImg">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btnLogin" data-bs-dismiss="modal">Guardar</button>
+              <button type="submit" class="btn btnDelete" data-bs-dismiss="modal">Borrar</button>   
+            </div>
+          </div>
+        </div>
+      </div> 
+
+     <!-- Modal Sobre Mi -->
+     <div class="modal fade" id="sobreMiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar Texto Sobre Mi</h5>
+          </div>
+          <div class="modal-body">
+            <form name="sobreMiFrom">
+              <!-- formulario de Sobre Mi-->
+              <div class="mb-3">
+                <label for="sobreMiTexto" class="form-label">Modificar Sobre Mi</label>
+                <textarea class="form-control" id="sobreMiTexto" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btnLogin" data-bs-dismiss="modal">Guardar</button>
+            <button type="submit" class="btn btnDelete" data-bs-dismiss="modal">Borrar</button>   
+          </div>
+        </div>
+      </div>
+     </div>
 
       <!-- Modal Img Perfil-->
       <div class="modal fade" id="imgPerfilModal" tabindex="-1" aria-labelledby="imgPerfilModal" aria-hidden="true">
@@ -420,127 +515,127 @@
         </div>
       </div>
     </div>
+   
     <!-- Modal Experiencia -->
     <div class="modal fade" id="experienciaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Editar Experiencia</h5>
-        <!--<button  type =" button " class =" btn-close " data-bs-dismiss =" modal " aria-label =" Close "></button>-->
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-      <div  class =" cuerpo-modal ">
-      <formulario  nombre =" experienciaForm " > 
-          <!-- formulario de experiencia-->
-      <div class="modal-body">
-        <form name="experienciaForm">
-        <div class="mb-3">
-          <label for="experienciaId" class="form-label">Seleccionar Experiencia</label> 
-          <select class="form-select" id="experienciaId">
-            <option selected>Seleccionar Experiencia</option>
-            <option value="1">ID1</option>
-            <option value="2">ID2</option>
-            <option value="3">ID3</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="experienciaUrl" class="form-label">Modificar Url de Empresa</label>
-          <input class="form-control" type="url" id="experienciaUrl">
-        </div>
-        <div class="mb-3">
-          <label for="experienciaImg" class="form-label">Modificar Logo de Empresa</label>
-          <input class="form-control" type="file" id="experienciaImg">
-        </div>
-        <div class="mb-3">
-          <label for="experienciaCargo" class="form-label">Modificar Cargo</label>
-          <input type="text" class="form-control" id="experienciaCargo" placeholder="Nombre nuevo">
-        </div>
-        <div class="mb-3">
-          <label for="experienciaPeriodoInicio" class="form-label">Modificar Periodo Inicio</label>
-          <input type="date" class="form-control" id="experienciaPeriodoInicio">
-        </div>
-        <div class="mb-3">
-          <label for="experienciaPeriodoFin" class="form-label">Modificar Periodo Fin</label>
-          <input type="date" class="form-control" id="experienciaPeriodoFin">
-        </div>
-        <div class="mb-3">
-            <label for="experienciaInfo" class="form-label">Modificar Información de Cargo</label>
-            <textarea class="form-control" id="experienciaInfo" rows="3"></textarea>
-        </div>
-        </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btnCancel" data-bs-dismiss="modal">Cancelar</button>  
-          <button type="submit" class="btn btnAgree" data-bs-dismiss="modal">Agregar</button>   
-          <button type="submit" class="btn btnMod" data-bs-dismiss="modal">Modificar</button>  
-          <button type="submit" class="btn btnDelete" data-bs-dismiss="modal">Borrar</button>   
-          <button type="submit" class="btn btnLogin" data-bs-dismiss="modal">Guardar</button>  
-        </div>
-      </div>
-      </div>
-      </div>
-    </div>
-
-<!-- Modal Educacion -->
-<div class="modal fade" id="educacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Editar Educacion</h5>
-        <!--<button  type =" button " class =" btn-close " data-bs-dismiss =" modal " aria-label =" Close "></button>-->
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-      <div  class =" cuerpo-modal ">
-      <formulario  nombre =" educacionForm " > 
-          <!-- formulario de educacion-->
-      <div class="modal-body">
-        <form name="educacionForm">
-        <div class="mb-3">
-          <label for="educacionId" class="form-label">Seleccionar Educacion</label> 
-          <select class="form-select" id="educacionId">
-            <option selected>Seleccionar Educacion</option>
-            <option value="1">ID1</option>
-            <option value="2">ID2</option>
-            <option value="3">ID3</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="educacionUrl" class="form-label">Modificar Url de Institucion</label>
-          <input class="form-control" type="url" id="educacionUrl">
-        </div>
-        <div class="mb-3">
-          <label for="educacionImg" class="form-label">Modificar Logo de Institucion</label>
-          <input class="form-control" type="file" id="estudioImg">
-        </div>
-        <div class="mb-3">
-          <label for="estudioCargo" class="form-label">Modificar Cargo</label>
-          <input type="text" class="form-control" id="estudioCargo" placeholder="Nombre nuevo">
-        </div>
-        <div class="mb-3">
-          <label for="estudioPeriodoInicio" class="form-label">Modificar Periodo Inicio</label>
-          <input type="date" class="form-control" id="estudioPeriodoInicio">
-        </div>
-        <div class="mb-3">
-          <label for="estudioPeriodoFin" class="form-label">Modificar Periodo Fin</label>
-          <input type="date" class="form-control" id="estudioPeriodoFin">
-        </div>
-        <div class="mb-3">
-            <label for="estudioInfo" class="form-label">Modificar Información de Cargo</label>
-            <textarea class="form-control" id="estudioInfo" rows="3"></textarea>
-        </div>
-        </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btnCancel" data-bs-dismiss="modal">Cancelar</button>  
-          <button type="submit" class="btn btnAgree" data-bs-dismiss="modal">Agregar</button>   
-          <button type="submit" class="btn btnMod" data-bs-dismiss="modal">Modificar</button>  
-          <button type="submit" class="btn btnDelete" data-bs-dismiss="modal">Borrar</button>   
-          <button type="submit" class="btn btnLogin" data-bs-dismiss="modal">Guardar</button>  
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar Experiencia</h5>
+            <!--<button  type =" button " class =" btn-close " data-bs-dismiss =" modal " aria-label =" Close "></button>-->
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div  class =" cuerpo-modal ">
+            <formulario  nombre =" experienciaForm " >
+              <!-- formulario de experiencia-->
+              <div class="modal-body">
+                <form name="experienciaForm">
+                  <div class="mb-3">
+                    <label for="experienciaId" class="form-label">Seleccionar Experiencia</label>
+                    <select class="form-select" id="experienciaId">
+                      <option selected>Seleccionar Experiencia</option>
+                      <option value="1">ID1</option>
+                      <option value="2">ID2</option>
+                      <option value="3">ID3</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="experienciaUrl" class="form-label">Modificar Url de Empresa</label>
+                    <input class="form-control" type="url" id="experienciaUrl">
+                  </div>
+                  <div class="mb-3">
+                    <label for="experienciaImg" class="form-label">Modificar Logo de Empresa</label>
+                    <input class="form-control" type="file" id="experienciaImg">
+                  </div>
+                  <div class="mb-3">
+                    <label for="experienciaCargo" class="form-label">Modificar Cargo</label>
+                    <input type="text" class="form-control" id="experienciaCargo" placeholder="Nombre nuevo">
+                  </div>
+                  <div class="mb-3">
+                    <label for="experienciaPeriodoInicio" class="form-label">Modificar Periodo Inicio</label>
+                    <input type="date" class="form-control" id="experienciaPeriodoInicio">
+                  </div>
+                  <div class="mb-3">
+                    <label for="experienciaPeriodoFin" class="form-label">Modificar Periodo Fin</label>
+                    <input type="date" class="form-control" id="experienciaPeriodoFin">
+                  </div>
+                  <div class="mb-3">
+                    <label for="experienciaInfo" class="form-label">Modificar Información de Cargo</label>
+                    <textarea class="form-control" id="experienciaInfo" rows="3"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btnCancel" data-bs-dismiss="modal">Cancelar</button>  
+                <button type="submit" class="btn btnAgree" data-bs-dismiss="modal">Agregar</button>   
+                <button type="submit" class="btn btnMod" data-bs-dismiss="modal">Modificar</button>  
+                <button type="submit" class="btn btnDelete" data-bs-dismiss="modal">Borrar</button>   
+                <button type="submit" class="btn btnLogin" data-bs-dismiss="modal">Guardar</button>  
+              </div>
+          </div>
+         </div>
         </div>
       </div>
-      </div>
-      </div>
-    </div>
+      <!-- Modal Educacion -->
+      <div class="modal fade" id="educacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Editar Educacion</h5>
+              <!--<button  type =" button " class =" btn-close " data-bs-dismiss =" modal " aria-label =" Close "></button>-->
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             </div>
+             <div  class =" cuerpo-modal ">
+              <formulario  nombre =" educacionForm " >
+                <!-- formulario de educacion-->
+                <div class="modal-body">
+                  <form name="educacionForm">
+                    <div class="mb-3">
+                      <label for="educacionId" class="form-label">Seleccionar Educacion</label>
+                      <select class="form-select" id="educacionId">
+                        <option selected>Seleccionar Educacion</option>
+                        <option value="1">ID1</option>
+                        <option value="2">ID2</option>
+                        <option value="3">ID3</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="educacionUrl" class="form-label">Modificar Url de Institucion</label>
+                      <input class="form-control" type="url" id="educacionUrl">
+                    </div>
+                    <div class="mb-3">
+                      <label for="educacionImg" class="form-label">Modificar Logo de Institucion</label>
+                      <input class="form-control" type="file" id="estudioImg">
+                    </div>
+                    <div class="mb-3">
+                      <label for="estudioCargo" class="form-label">Modificar Cargo</label>
+                      <input type="text" class="form-control" id="estudioCargo" placeholder="Nombre nuevo">
+                    </div>
+                    <div class="mb-3">
+                      <label for="estudioPeriodoInicio" class="form-label">Modificar Periodo Inicio</label>
+                      <input type="date" class="form-control" id="estudioPeriodoInicio">
+                    </div>
+                    <div class="mb-3">
+                      <label for="estudioPeriodoFin" class="form-label">Modificar Periodo Fin</label>
+                      <input type="date" class="form-control" id="estudioPeriodoFin">
+                    </div>
+                    <div class="mb-3">
+                      <label for="estudioInfo" class="form-label">Modificar Información de Cargo</label>
+                      <textarea class="form-control" id="estudioInfo" rows="3"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btnCancel" data-bs-dismiss="modal">Cancelar</button>  
+                  <button type="submit" class="btn btnAgree" data-bs-dismiss="modal">Agregar</button>   
+                  <button type="submit" class="btn btnMod" data-bs-dismiss="modal">Modificar</button>  
+                  <button type="submit" class="btn btnDelete" data-bs-dismiss="modal">Borrar</button>   
+                  <button type="submit" class="btn btnLogin" data-bs-dismiss="modal">Guardar</button>  
+                </div>
+              </div>
+          </div>
+         </div>
+        </div>
     <!-- Modal Habilidades -->
     <div class="modal fade" id="habilidadesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -584,24 +679,68 @@
   </div>
  </div>
 
-
-
-
-  
-
-
-
-  
-        
-      
-
-
-      <footer id="main-footer">
-        <div class="container">
-          <p class="small">Miguel Angel Trubiano Portfolio 2022 &copy;</p>
-          <i class="fa-brands fa-whatsapp"> Mi washapp: 54-9-2616714457</i>
-        </div>
-      </footer>
+ <!-- Modal Proyectos -->
+<div class="modal fade" id="proyectosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Proyecto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form name="proyectosForm"> 
+              <!-- formulario de proyectos-->
+              <div class="mb-3">
+              <select class="form-select" id="proyectoId">
+                <option selected>Seleccionar Proyecto</option>
+                <option value="1">ID1</option>
+                <option value="2">ID2</option>
+                <option value="3">ID3</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="proyectoUrl" class="form-label">Modificar Url de Proyecto</label>
+              <input class="form-control" type="url" id="proyectoUrl">
+            </div>
+              <div class="mb-3">
+                <label for="proyectoImg" class="form-label">Modificar Logo de Proyecto</label>
+                <input class="form-control" type="file" id="proyectoImg">
+              </div>
+              <div class="mb-3">
+                <label for="proyectoNombre" class="form-label">Modificar Nombre de Proyecto</label>
+                <input type="text" class="form-control" id="proyectoNombre" placeholder="Nombre nuevo">
+              </div>
+              <div class="mb-3">
+                <label for="proyectoPeriodoInicio" class="form-label">Modificar Periodo Inicio</label>
+                <input type="date" class="form-control" id="proyectoPeriodoInicio">
+              </div>
+              <div class="mb-3">
+                <label for="proyectoPeriodoFin" class="form-label">Modificar Periodo Fin</label>
+                <input type="date" class="form-control" id="proyectoPeriodoFin">
+              </div>
+              <div class="mb-3">
+                  <label for="proyectoInfo" class="form-label">Modificar Información de Proyecto Realizado</label>
+                  <textarea class="form-control" id="proyectoInfo" rows="3"></textarea>
+              </div>
+           </form>
+         </div>
+         <div class="modal-footer">
+          <button type="submit" class="btn btnCancel" data-bs-dismiss="modal">Cancelar</button>  
+          <button type="submit" class="btn btnAgree" data-bs-dismiss="modal">Agregar</button>   
+          <button type="submit" class="btn btnMod" data-bs-dismiss="modal">Modificar</button>  
+          <button type="submit" class="btn btnDelete" data-bs-dismiss="modal">Borrar</button>   
+          <button type="submit" class="btn btnLogin" data-bs-dismiss="modal">Guardar</button>  
+         </div>
+       </div>
+    </div>
+  </div>
+  <!--Pie de pagina FOOTER-->
+  <footer id="main-footer">
+    <div class="container">
+      <p class="small">Miguel Angel Trubiano Portfolio 2022 &copy;</p>
+      <i class="fa-brands fa-whatsapp"> Mi washapp: 54-9-2616714457</i>
+    </div>
+  </footer>
       
         
       
